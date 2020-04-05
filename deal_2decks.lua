@@ -1,5 +1,5 @@
--- Scripts for the "Deal" button. When clicked, cards from the deck will
--- automatically be dealt to all seated players.
+-- Scripts for the "Deal" button with 2 decks (108 cards). When clicked, cards
+-- from the deck will automatically be dealt to all seated players.
 
 -- The GUID of the "template" deck (for cloning purposes). If the GUID of
 -- the deck in TTS changes, this will need to be updated accordingly.
