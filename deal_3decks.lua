@@ -3,18 +3,30 @@
 
 -- The GUID of the "template" deck (for cloning purposes). If the GUID of
 -- the deck in TTS changes, this will need to be updated accordingly.
-templateDeckGUID = '1ef81b'
+templateDeckGUID = 'b1d845'
 
 function onload()
     -- Clickable area
     self.createButton({
-        click_function = "click", function_owner = self,
-        position = {0, 0.2, 0}, height = 700, width = 700, color = {1, 1, 1, 0}, label = ""
+        click_function = "click", 
+        function_owner = self,
+        position = {0, 0.2, 0}, 
+        height = 700, 
+        width = 700, 
+        color = {1, 1, 1, 0}, 
+        label = "",
+        tooltip = "Automatically deal cards to each player"
     })
     -- Button label
     self.createButton({
-        click_function = "click", function_owner = self,
-        position = {0, 0.2, 0}, height = 1, width = 1, color = {1, 1, 1, 1}, label = "Deal", font_size = 200
+        click_function = "click", 
+        function_owner = self,
+        position = {0, 0.2, 0}, 
+        height = 1, 
+        width = 1, 
+        color = {1, 1, 1, 1}, 
+        label = "Deal", 
+        font_size = 200
     })
 end
 
