@@ -49,19 +49,4 @@ function dealDeck(deck, playerColorWhoPressed)
     for index, currentPlayerColor in ipairs(getSeatedPlayers()) do
         Wait.time(function() deck.deal(1, currentPlayerColor) end, 2, numCardsToDeal)
     end
-    if isFirstRound() == false then
-        -- Deal the remaining 8 cards to the player that pressed the button.
-        Wait.time(function() deck.deal(8, playerColorWhoPressed) end, (2 * numCardsToDeal) + 2)
-    end
-end
-
--- Check all the counters on the table. If they're all set to the initial state
--- of 2, return true.
-function isFirstRound()
-  for _, object in ipairs(getAllObjects()) do
-      if object.tag == 'Counter' and object.getValue() != 2 then
-          return false
-      end
-  end
-  return true
 end
